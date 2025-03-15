@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #072AC8;
+  
+}
+
+:where(:root), :root:has(input.theme-controller[value=light]:checked), [data-theme=light]{
+    --border : 0;
+    
+}
